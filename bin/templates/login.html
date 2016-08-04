@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}"></link>
+	<script src="https://use.fontawesome.com/369dfeb314.js"></script>
+</head>
+<body onload='document.f.username.focus();'>
+	<div id='mainWrapper'>
+		<div class='login-container'>
+			<div class='login-card'>
+				<div id='loginForm' class='login-form'>
+					<form name='f' th:action="@{/login}" method='POST' class='form-horizontal'>
+						<div class='alert alert-danger' th:if="${param.error}">
+							<p>Incorrect username or password. Try again.</p>
+						</div>
+						<div class='alert alert-success' th:if="${param.logout}">
+							<p>You have been logged out.</p>
+						</div>
+						
+						<div class='input-group input-sm'>
+							<label class='input-group-addon' for='username'>
+								<i class='fa fa-user'></i>
+							</label>
+							<input type='text' class='form-control' id='username' name='username' placeholder='Enter Username' />
+						</div>
+						<div class='input-group input-sm'>
+							<label class='input-group-addon' for='password'>
+								<i class='fa fa-lock'></i>
+							</label>
+							<input type='password' class='form-control' id='password' name='password' placeholder='Enter Password' />
+						</div>
+						<div class='form-actions'>
+							<input name="submit" type="submit" value="Login" class='btn btn-block btn-primary btn-default'/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

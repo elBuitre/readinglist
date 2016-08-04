@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class readinglist.SimpleWebTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class readinglist.SimpleWebTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/readinglist.html">readinglist</a> &gt; SimpleWebTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="pageNotFound"></a>
+<h3 class="failures">pageNotFound</h3>
+<span class="code">
+<pre>java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:249)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:56)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1054)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:829)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 45 more
+Caused by: org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:56)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1385)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1006)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 63 more
+Caused by: java.sql.SQLException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:280)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:708)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:642)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:464)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.&lt;init&gt;(ConnectionPool.java:141)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126)
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:50)
+	... 68 more
+Caused by: java.lang.ClassNotFoundException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:56)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:268)
+	... 77 more
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:38)
+	... 78 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">pageNotFound</td>
+<td>0s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2016-08-04 15:06:34.962  INFO 3344 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [readinglist.SimpleWebTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-08-04 15:06:34.978  INFO 3344 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-08-04 15:06:34.983  INFO 3344 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5f5a2551, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4f39036b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@61902bf5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7105520c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7f7b81d0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@78def70f, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@18f1a462]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.5.RELEASE)
+
+2016-08-04 15:06:35.706  INFO 3344 --- [    Test worker] readinglist.SimpleWebTest                : Starting SimpleWebTest on JA_DEV with PID 3344 (C:\workspace-sts\readinglist\build\classes\test started by stefano in C:\workspace-sts\readinglist)
+2016-08-04 15:06:35.715  INFO 3344 --- [    Test worker] readinglist.SimpleWebTest                : No active profile set, falling back to default profiles: default
+2016-08-04 15:06:35.727  INFO 3344 --- [    Test worker] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ded607f: startup date [Thu Aug 04 15:06:35 CEST 2016]; root of context hierarchy
+2016-08-04 15:06:43.189  INFO 3344 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da9da31a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-08-04 15:06:52.343  INFO 3344 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2016-08-04 15:06:52.536  INFO 3344 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-08-04 15:06:52.547  INFO 3344 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-08-04 15:06:55.684  INFO 3344 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-08-04 15:06:55.700  INFO 3344 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 19974 ms
+2016-08-04 15:06:59.568  INFO 3344 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'metricFilter' to: [/*]
+2016-08-04 15:06:59.576  INFO 3344 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-08-04 15:06:59.576  INFO 3344 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-08-04 15:06:59.576  INFO 3344 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-08-04 15:06:59.579  INFO 3344 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-08-04 15:06:59.582  INFO 3344 --- [ost-startStop-1] .e.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2016-08-04 15:06:59.583  INFO 3344 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-08-04 15:06:59.583  INFO 3344 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-08-04 15:06:59.583  INFO 3344 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-08-04 15:07:01.567 ERROR 3344 --- [ost-startStop-1] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+
+java.sql.SQLException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------&gt; Parent Classloader:
+sun.misc.Launcher$AppClassLoader@4e25154f
+
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:280) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:708) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:642) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:464) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.&lt;init&gt;(ConnectionPool.java:141) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126) [tomcat-jdbc-8.0.33.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:50) [flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1385) [flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1006) [flyway-core-3.2.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) [spring-boot-autoconfigure-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:444) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:813) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:185) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1143) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1068) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:618) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:618) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:534) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:523) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.AutowiredWebSecurityConfigurersIgnoreParents.getWebSecurityConfigurers(AutowiredWebSecurityConfigurersIgnoreParents.java:53) [spring-security-config-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_92]
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:113) [spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:129) [spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.ast.MethodReference.access$000(MethodReference.java:49) [spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:347) [spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:88) [spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:120) [spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:242) [spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:161) [spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString(AbstractBeanFactory.java:1413) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1029) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:618) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1060) [spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.initDelegate(DelegatingFilterProxy.java:326) [spring-web-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.initFilterBean(DelegatingFilterProxy.java:235) [spring-web-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.web.filter.GenericFilterBean.init(GenericFilterBean.java:199) [spring-web-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterConfig.initFilter(ApplicationFilterConfig.java:279) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterConfig.&lt;init&gt;(ApplicationFilterConfig.java:109) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:4658) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5277) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_92]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_92]
+Caused by: java.lang.ClassNotFoundException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------&gt; Parent Classloader:
+sun.misc.Launcher$AppClassLoader@4e25154f
+
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:56) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:268) ~[tomcat-jdbc-8.0.33.jar:na]
+	... 141 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:74) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1139) ~[tomcat-embed-core-8.0.33.jar:8.0.33]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_92]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_92]
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:38) ~[tomcat-jdbc-8.0.33.jar:na]
+	... 142 common frames omitted
+
+2016-08-04 15:07:01.679 ERROR 3344 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Exception starting filter springSecurityFilterChain
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.setFilterChainProxySecurityConfigurer(org.springframework.security.config.annotation.ObjectPostProcessor,java.util.List) throws java.lang.Exception; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.setContentNegotationStrategy(org.springframework.web.accept.ContentNegotiationStrategy); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List); nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController' defined in file [C:\workspace-sts\readinglist\build\classes\main\readinglist\ReadingListController.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [readinglist.ReadingListRepository]: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1060) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.initDelegate(DelegatingFilterProxy.java:326) ~[spring-web-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.initFilterBean(DelegatingFilterProxy.java:235) ~[spring-web-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.web.filter.GenericFilterBean.init(GenericFilterBean.java:199) ~[spring-web-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterConfig.initFilter(ApplicationFilterConfig.java:279) ~[tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.core.ApplicationFilterConfig.&lt;init&gt;(ApplicationFilterConfig.java:109) ~[tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:4658) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5277) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) [tomcat-embed-core-8.0.33.jar:8.0.33]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_92]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_92]
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.setFilterChainProxySecurityConfigurer(org.springframework.security.config.annotation.ObjectPostProcessor,java.util.List) throws java.lang.Exception; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.setContentNegotationStrategy(org.springframework.web.accept.ContentNegotiationStrategy); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List); nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController' defined in file [C:\workspace-sts\readinglist\build\classes\main\readinglist\ReadingListController.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [readinglist.ReadingListRepository]: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:661) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.setContentNegotationStrategy(org.springframework.web.accept.ContentNegotiationStrategy); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List); nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController' defined in file [C:\workspace-sts\readinglist\build\classes\main\readinglist\ReadingListController.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [readinglist.ReadingListRepository]: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:164) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString(AbstractBeanFactory.java:1413) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1029) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:618) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.setContentNegotationStrategy(org.springframework.web.accept.ContentNegotiationStrategy); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List); nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController' defined in file [C:\workspace-sts\readinglist\build\classes\main\readinglist\ReadingListController.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [readinglist.ReadingListRepository]: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:534) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:523) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.AutowiredWebSecurityConfigurersIgnoreParents.getWebSecurityConfigurers(AutowiredWebSecurityConfigurersIgnoreParents.java:53) ~[spring-security-config-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_92]
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:113) ~[spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:129) ~[spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.ast.MethodReference.access$000(MethodReference.java:49) ~[spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:347) ~[spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:88) ~[spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:120) ~[spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:242) ~[spring-expression-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:161) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.setContentNegotationStrategy(org.springframework.web.accept.ContentNegotiationStrategy); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List); nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController' defined in file [C:\workspace-sts\readinglist\build\classes\main\readinglist\ReadingListController.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [readinglist.ReadingListRepository]: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:661) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 59 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List); nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController' defined in file [C:\workspace-sts\readinglist\build\classes\main\readinglist\ReadingListController.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [readinglist.ReadingListRepository]: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:618) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List); nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController' defined in file [C:\workspace-sts\readinglist\build\classes\main\readinglist\ReadingListController.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [readinglist.ReadingListRepository]: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:661) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 81 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'readingListController' defined in file [C:\workspace-sts\readinglist\build\classes\main\readinglist\ReadingListController.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [readinglist.ReadingListRepository]: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:185) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1143) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1068) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:618) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 83 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'readingListRepository': Cannot create inner bean '(inner bean)#356f72ef' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:813) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 96 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#356f72ef': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:444) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 110 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 118 common frames omitted
+Caused by: org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:56) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1385) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1006) ~[flyway-core-3.2.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 127 common frames omitted
+Caused by: java.sql.SQLException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------&gt; Parent Classloader:
+sun.misc.Launcher$AppClassLoader@4e25154f
+
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:280) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:708) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:642) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:464) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.&lt;init&gt;(ConnectionPool.java:141) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:50) ~[flyway-core-3.2.1.jar:na]
+	... 132 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------&gt; Parent Classloader:
+sun.misc.Launcher$AppClassLoader@4e25154f
+
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:56) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:268) ~[tomcat-jdbc-8.0.33.jar:na]
+	... 141 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:74) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1139) ~[tomcat-embed-core-8.0.33.jar:8.0.33]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_92]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_92]
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:38) ~[tomcat-jdbc-8.0.33.jar:na]
+	... 142 common frames omitted
+
+2016-08-04 15:07:01.746 ERROR 3344 --- [ost-startStop-1] o.apache.catalina.core.StandardContext   : One or more Filters failed to start. Full details will be found in the appropriate container log file
+2016-08-04 15:07:01.749 ERROR 3344 --- [ost-startStop-1] o.apache.catalina.core.StandardContext   : Context [] startup failed due to previous errors
+2016-08-04 15:07:02.251 ERROR 3344 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+
+java.sql.SQLException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:280) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:708) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:642) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:464) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.&lt;init&gt;(ConnectionPool.java:141) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102) [tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126) [tomcat-jdbc-8.0.33.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:50) [flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1385) [flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1006) [flyway-core-3.2.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) [spring-boot-autoconfigure-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1054) [spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:829) [spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) [spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) [spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766) [spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361) [spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98) [spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:230) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:249) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:112) [gradle-testing-jvm-2.12.jar:2.12]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:56) [gradle-testing-jvm-2.12.jar:2.12]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-2.12.jar:2.12]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-2.12.jar:2.12]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_92]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-2.12.jar:2.12]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-2.12.jar:2.12]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_92]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54) [gradle-base-services-2.12.jar:2.12]
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40) [gradle-base-services-2.12.jar:2.12]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_92]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_92]
+Caused by: java.lang.ClassNotFoundException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:56) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:268) ~[tomcat-jdbc-8.0.33.jar:na]
+	... 77 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_92]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_92]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_92]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_92]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_92]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_92]
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:38) ~[tomcat-jdbc-8.0.33.jar:na]
+	... 78 common frames omitted
+
+2016-08-04 15:07:02.298  WARN 3344 --- [    Test worker] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+2016-08-04 15:07:02.306  INFO 3344 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2016-08-04 15:07:02.353 ERROR 3344 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1054) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:829) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98) [spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:230) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:249) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:112) [gradle-testing-jvm-2.12.jar:2.12]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:56) [gradle-testing-jvm-2.12.jar:2.12]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-2.12.jar:2.12]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-2.12.jar:2.12]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_92]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-2.12.jar:2.12]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-2.12.jar:2.12]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_92]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54) [gradle-base-services-2.12.jar:2.12]
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40) [gradle-base-services-2.12.jar:2.12]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_92]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_92]
+Caused by: org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:56) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1385) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1006) ~[flyway-core-3.2.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 63 common frames omitted
+Caused by: java.sql.SQLException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:280) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:708) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:642) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:464) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.&lt;init&gt;(ConnectionPool.java:141) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:50) ~[flyway-core-3.2.1.jar:na]
+	... 68 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:56) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:268) ~[tomcat-jdbc-8.0.33.jar:na]
+	... 77 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_92]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_92]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_92]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_92]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_92]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_92]
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:38) ~[tomcat-jdbc-8.0.33.jar:na]
+	... 78 common frames omitted
+
+2016-08-04 15:07:02.355  WARN 3344 --- [    Test worker] o.s.boot.SpringApplication               : Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' is defined)
+2016-08-04 15:07:02.359 ERROR 3344 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@61902bf5] to prepare test instance [readinglist.SimpleWebTest@752336e1]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) ~[spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228) ~[spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:230) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:249) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193) [spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:112) [gradle-testing-jvm-2.12.jar:2.12]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:56) [gradle-testing-jvm-2.12.jar:2.12]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-2.12.jar:2.12]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-2.12.jar:2.12]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_92]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-2.12.jar:2.12]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-2.12.jar:2.12]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_92]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_92]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_92]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_92]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360) [gradle-messaging-2.12.jar:2.12]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54) [gradle-base-services-2.12.jar:2.12]
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40) [gradle-base-services-2.12.jar:2.12]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_92]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_92]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1054) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:829) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 45 common frames omitted
+Caused by: org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:56) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1385) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1006) ~[flyway-core-3.2.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 63 common frames omitted
+Caused by: java.sql.SQLException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:280) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:708) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:642) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:464) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.&lt;init&gt;(ConnectionPool.java:141) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.flywaydb.core.internal.util.jdbc.JdbcUtils.openConnection(JdbcUtils.java:50) ~[flyway-core-3.2.1.jar:na]
+	... 68 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Unable to load class: com.mysql.jdbc.Driver from ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f;ClassLoader:sun.misc.Launcher$AppClassLoader@4e25154f
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:56) ~[tomcat-jdbc-8.0.33.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:268) ~[tomcat-jdbc-8.0.33.jar:na]
+	... 77 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_92]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_92]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_92]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_92]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_92]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_92]
+	at org.apache.tomcat.jdbc.pool.ClassLoaderUtil.loadClass(ClassLoaderUtil.java:38) ~[tomcat-jdbc-8.0.33.jar:na]
+	... 78 common frames omitted
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.12</a> at Aug 4, 2016 3:07:13 PM</p>
+</div>
+</div>
+</body>
+</html>
